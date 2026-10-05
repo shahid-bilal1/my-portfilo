@@ -1,786 +1,745 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="google-site-verification" content="2nbEgiyhlBTP489ElarSBzr1gKIitDXwL3HfYq15Tkk" />
-    <title>Paul Zeeshan </title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Shahid Bilal </title>
+<meta name="description" content="Portfolio of Shahid Bilal — GIT + AI learner and developer from Kandizal, Pampore, Jammu & Kashmir. Web development, Python, data analysis, AI & prompt engineering. Learning Today. Building Tomorrow." />
+<meta name="author" content="Shahid Bilal" />
+<meta name="theme-color" content="#faf7f1" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Shahid Bilal — GIT + AI Learner & Developer" />
+<meta property="og:description" content="Personal portfolio of Shahid Bilal: projects, skills, education and contact. Learning Today. Building Tomorrow." />
+<meta property="og:image" content="/images/profile.jpg" />
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%235b8cff'/%3E%3Cstop offset='1' stop-color='%232f5cff'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='14' fill='%23ffffff'/%3E%3Crect x='2' y='2' width='60' height='60' rx='12' fill='none' stroke='url(%23g)' stroke-width='2'/%3E%3Ctext x='32' y='42' font-family='Arial, sans-serif' font-size='26' font-weight='700' fill='url(%23g)' text-anchor='middle'%3ESB%3C/text%3E%3C/svg%3E" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+<meta name="google-site-verification" content="J1IL8iKHKi1f_d2_VyrEH2X6Vuht_GM2KZtilKm8OJ4" />
+<link rel="stylesheet" href="index.css">
 
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-   
 
-    <!-- Font Awesome CDN -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-
-   <link rel="stylesheet" href="index.css">
-   <link rel="stylesheet" href="index.js">
 </head>
-<body>
 
-    <!-- ========================================
-         FLOATING BACKGROUND SHAPES
-         ======================================== -->
-    <div class="bg-shapes" aria-hidden="true">
-        <div class="bg-shape"></div>
-        <div class="bg-shape"></div>
-        <div class="bg-shape"></div>
-        <div class="bg-shape"></div>
+<body>
+<!-- scroll progress -->
+<div id="progress" aria-hidden="true"></div>
+
+<!-- background decor -->
+<div class="decor" aria-hidden="true">
+  <div class="grid-bg"></div>
+  <div class="blob b1"></div>
+  <div class="blob b2"></div>
+  <div class="blob b3"></div>
+</div>
+
+<!-- ═══════════ NAVBAR ═══════════ -->
+<header id="header">
+  <div class="wrap nav">
+    <a href="#home" class="brand" aria-label="Shahid Bilal — home">
+      <span class="brand-mark">SB</span>
+      <span class="brand-t"><b>SHAHID BILAL</b><span>GIT + AI Learner</span></span>
+    </a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="#home" data-spy="home">Home</a>
+      <a href="#about" data-spy="about">About</a>
+      <a href="#education" data-spy="education">Education</a>
+      <a href="#skills" data-spy="skills">Skills</a>
+      <a href="#projects" data-spy="projects">Projects</a>
+      <a href="#gallery" data-spy="gallery">Gallery</a>
+      <a href="#contact" data-spy="contact">Contact</a>
+    </nav>
+    <div style="display:flex;align-items:center;gap:10px">
+      <a href="#contact" class="nav-cta">Let's Talk
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+      </a>
+      <button id="menuBtn" aria-label="Open menu" aria-expanded="false">
+        <svg id="icMenu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+        <svg id="icClose" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" style="display:none"><path d="M18 6 6 18M6 6l12 12"/></svg>
+      </button>
+    </div>
+  </div>
+  <nav class="mobile-menu" aria-label="Mobile">
+    <a href="#home" data-spy="home">Home<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></a>
+    <a href="#about" data-spy="about">About<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></a>
+    <a href="#education" data-spy="education">Education<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></a>
+    <a href="#skills" data-spy="skills">Skills<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></a>
+    <a href="#projects" data-spy="projects">Projects<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></a>
+    <a href="#gallery" data-spy="gallery">Gallery<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></a>
+    <a href="#contact" data-spy="contact">Contact<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></a>
+    <a href="#contact" class="btn btn-primary mobile-cta" style="color:#fff">Let's Talk</a>
+  </nav>
+</header>
+
+<main>
+<!-- ═══════════ HERO ═══════════ -->
+<section id="home" class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <div class="status-pill h-in" style="--hd:.05s"><span class="dot"></span>GIT + AI Learner · ILS Srinagar</div>
+      <h1 class="h-in" style="--hd:.15s">SHAHID<span class="grad">BILAL</span></h1>
+      <p class="roles h-in" style="--hd:.28s">
+        <span class="r1">GIT + AI Learner</span><span class="r-dot"></span>
+        <span>Developer</span><span class="r-dot"></span>
+        <span>Creative Problem Solver</span>
+      </p>
+      <p class="intro h-in" style="--hd:.4s">
+        I am Shahid Bilal, a passionate learner from <b>Kandizal, Pampore</b>. I started my coding journey in
+        <b>Class 8</b> and continue to develop my skills in <b>programming, web development, AI, data analysis</b>
+        and creative technology.
+      </p>
+      <div class="hero-btns h-in" style="--hd:.52s">
+        <a href="#projects" class="btn btn-primary">Explore My Work
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+        </a>
+        <a href="#contact" class="btn btn-ghost">Contact Me</a>
+      </div>
+      <div class="hero-social h-in" style="--hd:.64s">
+        <a class="icon-btn" href="https://www.instagram.com/the_shahid._/" target="_blank" rel="noopener noreferrer" aria-label="Instagram — @the_shahid._" title="Instagram · @the_shahid._">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+        </a>
+        <a class="icon-btn" href="https://www.linkedin.com/in/shahid-ahmad-322227373" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn — Shahid Ahmad" title="LinkedIn">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+        </a>
+        <a class="icon-btn" href="https://github.com/shahid-bilal1" target="_blank" rel="noopener noreferrer" aria-label="GitHub — shahid-bilal1" title="GitHub · shahid-bilal1">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+        </a>
+        <span class="hero-sep"></span>
+        <span class="hero-loc">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+          Kandizal, Pampore, J&amp;K
+        </span>
+      </div>
     </div>
 
-    <!-- ========================================
-         NAVIGATION BAR
-         ======================================== -->
-    <nav class="navbar" id="navbar" role="navigation" aria-label="Main Navigation">
-        <div class="nav-container">
-            <a href="#hero" class="nav-logo">Paul<span>.</span></a>
-            <ul class="nav-links" id="navLinks">
-                <li><a href="#hero" class="active">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <!-- Mobile Menu Toggle Button -->
-            <button class="menu-toggle" id="menuToggle" aria-label="Toggle Navigation Menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
+    <div class="photo-wrap h-in" style="--hd:.35s">
+      <div class="photo-glow"></div>
+      <div class="photo-card">
+        <div class="photo-frame">
+          <img src="./photo.png" alt="Shahid Bilal — professional portrait" />
+          <div class="name-plate">
+            <div><b>Shahid Bilal</b><span>Learning Today. Building Tomorrow.</span></div>
+            <span class="plate-badge">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3-1.9 5.8a2 2 0 0 1-1.3 1.3L3 12l5.8 1.9a2 2 0 0 1 1.3 1.3L12 21l1.9-5.8a2 2 0 0 1 1.3-1.3L21 12l-5.8-1.9a2 2 0 0 1-1.3-1.3Z"/></svg>
+            </span>
+          </div>
         </div>
-        <!-- Overlay for mobile menu -->
-        <div class="nav-overlay" id="navOverlay"></div>
-    </nav>
+      </div>
+      <div class="float-chip fc1 h-in" style="--hd:.85s">
+        <span class="fc-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z"/><path d="m9 12 2 2 4-4"/></svg></span>
+        <div><b>ILS Srinagar</b><span>27+ yrs · since 1998</span></div>
+      </div>
+      <div class="float-chip fc2 h-in" style="--hd:1s">
+        <span class="fc-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m16 18 6-6-6-6M8 6l-6 6 6 6"/></svg></span>
+        <div><b>Coding since Class 8</b><span>Dcode Future, Pampore</span></div>
+      </div>
+    </div>
+  </div>
+  <a href="#about" class="scroll-cue" aria-label="Scroll to about section">
+    <span>Scroll</span>
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14"/><path d="m19 12-7 7-7-7"/></svg>
+  </a>
+</section>
 
-    <!-- ========================================
-         HERO SECTION
-         ======================================== -->
-    <section class="hero" id="hero">
-        <div class="hero-container">
-            <!-- Hero Text Content -->
-            <div class="hero-content">
-                <div class="hero-badge">
-                    <span class="dot"></span>
-                    Open to Opportunities
-                </div>
-                <h1 class="hero-title">
-                    Hi, I'm<br>
-                    <span class="highlight">Paul Zeeshan</span>
-                </h1>
-                <p class="hero-subtitle">   <a href="https://core.ilsimperia.com/plasma/student/dashboard">GIT + AI Student</a> | Web Development Learner</p>
-                <p class="hero-description">
-                    I am a student from Raithan, Budgam, currently studying at <a href="https://www.amarsinghcollege.ac.in/"> Amar Singh College</a> 
-                    and developing my technical skills at <a href="https://core.ilsimperia.com/plasma/student/dashboard">ILS PLASMA</a>, Srinagar.
-                </p>
-                <div class="hero-buttons">
-                    <a href="#skills" class="btn btn-primary">
-                        <i class="fas fa-code"></i> View My Skills
-                    </a>
-                    <a href="#contact" class="btn btn-secondary">
-                        <i class="fas fa-envelope"></i> Contact Me
-                    </a>
-                </div>
-            </div>
-
-            <!-- Hero Image -->
-            <div class="hero-image-wrapper">
-                <div class="hero-image-container">
-                    <div class="hero-image-ring"></div>
-                    <div class="hero-image-bg"></div>
-                    <!-- ============================
-                         REPLACE YOUR PHOTO HERE
-                         Save your photo as "photo.jpg"
-                         in the same folder as this HTML file.
-                         ============================ -->
-                    <img src="./img.png" alt="Paul Zeeshan — Profile Photo" class="hero-image">
-                    <!-- Floating decorative elements -->
-                    <div class="hero-float-element el-1">
-                        <i class="fas fa-code"></i> GIT + AI
-                    </div>
-                    <div class="hero-float-element el-2">
-                        <i class="fas fa-graduation-cap"></i> Student
-                    </div>
-                </div>
-            </div>
+<!-- ═══════════ ABOUT ═══════════ -->
+<section id="about" class="pad">
+  <div class="wrap">
+    <div class="sec-head" data-reveal>
+      <span class="eyebrow">About Me</span>
+      <h2>A learner with <span class="grad">real momentum</span></h2>
+    </div>
+    <div class="about-grid">
+      <div class="about-copy">
+        <p class="lead" data-reveal>My name is <b>Shahid Bilal</b> and I am from <b>Kandizal, Pampore, Jammu &amp; Kashmir</b>. I started my coding journey in <span class="hl">Class 8 at Dcode Future, Pampore</span>, where I developed my initial interest in computers and coding.</p>
+        <p data-reveal style="--d:.08s">After completing my schooling, I continued developing my technical skills and started learning modern technologies including <b>GIT, AI, Python, web development, data analysis</b> and <b>graphic designing</b>. I have also completed <b>half of my diploma/course journey from Dcode Future</b>.</p>
+        <p data-reveal style="--d:.14s">I am currently learning <b>GIT + AI at ILS Srinagar</b> — an IT Management Skills Courses company with <span class="hl">27+ years of excellence since 1998</span>.</p>
+        <div class="facts">
+          <div class="fact card" data-reveal style="--d:.05s">
+            <span class="fi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg></span>
+            <div><span>From</span><b>Kandizal, Pampore</b></div>
+          </div>
+          <div class="fact card" data-reveal style="--d:.1s">
+            <span class="fi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M2 20h20"/></svg></span>
+            <div><span>Currently</span><b>GIT + AI · ILS Srinagar</b></div>
+          </div>
+          <div class="fact card" data-reveal style="--d:.15s">
+            <span class="fi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10 12 5 2 10l10 5 10-5Z"/><path d="M6 12.5V17c0 1.7 2.7 3 6 3s6-1.3 6-3v-4.5"/><path d="M22 10v6"/></svg></span>
+            <div><span>Pursuing</span><b>BA · SP College</b></div>
+          </div>
+          <div class="fact card" data-reveal style="--d:.2s">
+            <span class="fi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m4 6 8-4 8 4"/><path d="M18 10v10H6V10"/><path d="M2 20h20"/><path d="M10 20v-4a2 2 0 1 1 4 0v4"/></svg></span>
+            <div><span>Started Coding</span><b>Class 8 · Dcode Future</b></div>
+          </div>
         </div>
-    </section>
+      </div>
 
-    <!-- ========================================
-         ABOUT ME SECTION
-         ======================================== -->
-    <section class="about section-padding" id="about">
-        <div class="container">
-            <div class="section-header fade-in">
-                <span class="section-label">About Me</span>
-                <h2 class="section-title">Know Me Better</h2>
-                <p class="section-subtitle">A glimpse into my background, education and passion for technology.</p>
-            </div>
-
-            <div class="about-grid">
-                <!-- Left: Animated Visual Card -->
-                <div class="about-image-side fade-in-left">
-                    <div class="about-card-visual">
-                        <div class="about-icon">🎓</div>
-                        <h3>Passionate Learner</h3>
-                        <p>Continuously exploring new technologies and building my skill set in programming, AI and web development.</p>
-                        <div class="about-info-cards">
-                            <div class="about-info-card">
-                                <div class="info-number">12th</div>
-                                <div class="info-label">Completed</div>
-                            </div>
-                            <div class="about-info-card">
-                                <div class="info-number">GIT+AI</div>
-                                <div class="info-label">Course</div>
-                            </div>
-                            <div class="about-info-card">
-                                <div class="info-number">3+</div>
-                                <div class="info-label">Projects</div>
-                            </div>
-                            <div class="about-info-card">
-                                <div class="info-number">∞</div>
-                                <div class="info-label">Curiosity</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Right: Text Content -->
-                <div class="about-text fade-in-right">
-                    <h3>A Student Driven by Curiosity & Technology</h3>
-                    <p>
-                        I have completed my 12th from Higher Secondary School Khansahib and I am 
-                        currently pursuing higher education at Amar Singh College, Srinagar.
-                    </p>
-                    <p>
-                        Alongside my academics, I am building professional skills through the 
-                        GIT + AI program at ILS PLASMA, Srinagar — an institute trusted for over 
-                        27 years of IT excellence.
-                    </p>
-
-                    <div class="about-highlights">
-                        <div class="about-highlight-item">
-                            <i class="fas fa-check-circle"></i>
-                            <span>Interested in technology, programming and Artificial Intelligence</span>
-                        </div>
-                        <div class="about-highlight-item">
-                            <i class="fas fa-check-circle"></i>
-                            <span>Learning modern web development tools and techniques</span>
-                        </div>
-                        <div class="about-highlight-item">
-                            <i class="fas fa-check-circle"></i>
-                            <span>Continuously developing new technical skills</span>
-                        </div>
-                        <div class="about-highlight-item">
-                            <i class="fas fa-check-circle"></i>
-                            <span>Based in Raithan, Budgam — Studying in Srinagar</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      <div class="story-card card" data-reveal style="--d:.15s">
+        <div class="milestone">
+          <div class="mi-rail">
+            <span class="mi-dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m4 6 8-4 8 4"/><path d="M18 10v10H6V10"/><path d="M2 20h20"/><path d="M10 20v-4a2 2 0 1 1 4 0v4"/></svg></span>
+            <span class="mi-line"></span>
+          </div>
+          <div><h3>Class 8 — the first spark</h3><p>Discovered computers and coding at Dcode Future, Pampore, and never looked back.</p></div>
         </div>
-    </section>
-
-    <!-- ========================================
-         EDUCATION SECTION (TIMELINE)
-         ======================================== -->
-    <section class="section-padding" id="education">
-        <div class="container">
-            <div class="section-header fade-in">
-                <span class="section-label">Education</span>
-                <h2 class="section-title">My Academic Journey</h2>
-                <p class="section-subtitle">From school to college and professional skill training.</p>
-            </div>
-
-            <div class="education-timeline">
-                <!-- Timeline Item 1 -->
-                <div class="timeline-item fade-in">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-card">
-                        <span class="timeline-date">Completed</span>
-                        <h3>Higher Secondary School Khansahib</h3>
-                        <p>Successfully completed 12th standard education with a strong academic foundation.</p>
-                        <span class="timeline-tag">12th Pass</span>
-                    </div>
-                </div>
-
-                <!-- Timeline Item 2 -->
-                <div class="timeline-item fade-in">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-card">
-                        <span class="timeline-date">Current</span>
-                        <h3>Amar Singh College, Srinagar</h3>
-                        <p>Currently pursuing higher education and expanding knowledge across various subjects.</p>
-                        <span class="timeline-tag">Undergraduate</span>
-                    </div>
-                </div>
-
-                <!-- Timeline Item 3 -->
-                <div class="timeline-item fade-in">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-card">
-                        <span class="timeline-date">Professional Training</span>
-                        <h3>ILS PLASMA, Srinagar</h3>
-                        <p>Developing professional technical skills through hands-on training and projects.</p>
-                        <span class="timeline-tag">GIT + AI Course</span>
-                    </div>
-                </div>
-
-                <!-- Timeline Item 4 -->
-                <div class="timeline-item fade-in">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-card">
-                        <span class="timeline-date">Specialization</span>
-                        <h3>GIT + AI Program</h3>
-                        <p>Focused training in Git version control, Artificial Intelligence tools and modern development practices.</p>
-                        <span class="timeline-tag">In Progress</span>
-                    </div>
-                </div>
-            </div>
+        <div class="milestone">
+          <div class="mi-rail">
+            <span class="mi-dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M2 20h20"/></svg></span>
+            <span class="mi-line"></span>
+          </div>
+          <div><h3>Deepening the craft</h3><p>Halfway through my diploma journey with Dcode Future — now exploring Python, AI, web &amp; data.</p></div>
         </div>
-    </section>
-
-    <!-- ========================================
-         SKILLS SECTION
-         ======================================== -->
-    <section class="skills section-padding" id="skills">
-        <div class="container">
-            <div class="section-header fade-in">
-                <span class="section-label">Skills</span>
-                <h2 class="section-title">Technologies I'm Learning</h2>
-                <p class="section-subtitle">Building a strong foundation across key technologies and tools.</p>
-            </div>
-
-            <div class="skills-grid">
-                <!-- HTML -->
-                <div class="skill-card fade-in">
-                    <div class="skill-icon">
-                        <i class="fab fa-html5"></i>
-                    </div>
-                    <h3>HTML</h3>
-                    <span class="skill-level">Practicing</span>
-                </div>
-
-                <!-- CSS -->
-                <div class="skill-card fade-in">
-                    <div class="skill-icon">
-                        <i class="fab fa-css3-alt"></i>
-                    </div>
-                    <h3>CSS</h3>
-                    <span class="skill-level">Practicing</span>
-                </div>
-
-                <!-- Python -->
-                <div class="skill-card fade-in">
-                    <div class="skill-icon">
-                        <i class="fab fa-python"></i>
-                    </div>
-                    <h3>Python</h3>
-                    <span class="skill-level">Learning</span>
-                </div>
-
-                <!-- AI Prompting -->
-                <div class="skill-card fade-in">
-                    <div class="skill-icon">
-                        <i class="fas fa-robot"></i>
-                    </div>
-                    <h3>AI Prompting</h3>
-                    <span class="skill-level">Developing</span>
-                </div>
-
-                <!-- Git -->
-                <div class="skill-card fade-in">
-                    <div class="skill-icon">
-                        <i class="fab fa-git-alt"></i>
-                    </div>
-                    <h3>Git</h3>
-                    <span class="skill-level">Learning</span>
-                </div>
-
-                <!-- Web Development -->
-                <div class="skill-card fade-in">
-                    <div class="skill-icon">
-                        <i class="fas fa-globe"></i>
-                    </div>
-                    <h3>Web Development</h3>
-                    <span class="skill-level">Developing</span>
-                </div>
-
-                <!-- New Skills -->
-                <div class="skill-card fade-in">
-                    <div class="skill-icon">
-                        <i class="fas fa-rocket"></i>
-                    </div>
-                    <h3>New Skills</h3>
-                    <span class="skill-level">Exploring</span>
-                </div>
-            </div>
+        <div class="milestone now">
+          <div class="mi-rail">
+            <span class="mi-dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3-1.9 5.8a2 2 0 0 1-1.3 1.3L3 12l5.8 1.9a2 2 0 0 1 1.3 1.3L12 21l1.9-5.8a2 2 0 0 1 1.3-1.3L21 12l-5.8-1.9a2 2 0 0 1-1.3-1.3Z"/></svg></span>
+          </div>
+          <div><h3>GIT + AI at ILS Srinagar</h3><p>Training with an institute trusted for 27+ years of IT excellence since 1998.</p></div>
         </div>
-    </section>
-
-    <!-- ========================================
-         PROJECTS SECTION
-         ======================================== -->
-    <section class="section-padding" id="projects">
-        <div class="container">
-            <div class="section-header fade-in">
-                <span class="section-label">Projects</span>
-                <h2 class="section-title">What I've Built</h2>
-                <p class="section-subtitle">Hands-on projects that reflect my learning and growth.</p>
-            </div>
-
-            <div class="projects-grid">
-                <!-- ============================
-                     PROJECT 1
-                     Replace "#" below with your
-                     actual GitHub project URL.
-                     ============================ -->
-                <div class="project-card fade-in">
-                    <div class="project-image">
-                        <i class="fas fa-laptop-code"></i>
-                    </div>
-                    <div class="project-content">
-                        <span class="project-tag">HTML &amp; CSS</span>
-                        <h3>Web Development Project</h3>
-                        <p>A responsive website created while learning HTML and CSS, showcasing clean design and proper structure.</p>
-                        <a href="#" class="project-link" target="_blank" rel="noopener noreferrer">
-                            View Project <i class="fas fa-arrow-right"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- ============================
-                     PROJECT 2
-                     Replace "#" below with your
-                     actual GitHub project URL.
-                     ============================ -->
-                <div class="project-card fade-in">
-                    <div class="project-image">
-                        <i class="fab fa-python"></i>
-                    </div>
-                    <div class="project-content">
-                        <span class="project-tag">Python</span>
-                        <h3>Python Project</h3>
-                        <p>A beginner-friendly Python project demonstrating fundamental programming concepts and logic.</p>
-                        <a href="#" class="project-link" target="_blank" rel="noopener noreferrer">
-                            View Project <i class="fas fa-arrow-right"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- ============================
-                     PROJECT 3
-                     Replace "#" below with your
-                     actual GitHub project URL.
-                     ============================ -->
-                <div class="project-card fade-in">
-                    <div class="project-image">
-                        <i class="fas fa-brain"></i>
-                    </div>
-                    <div class="project-content">
-                        <span class="project-tag">AI</span>
-                        <h3>AI Prompting Project</h3>
-                        <p>A project focused on using AI prompting techniques and modern AI tools effectively.</p>
-                        <a href="#" class="project-link" target="_blank" rel="noopener noreferrer">
-                            View Project <i class="fas fa-arrow-right"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
+        <div class="quote">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V20c0 1 0 1 1 1z"/><path d="M15 21c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2h.75c0 2.25.25 4-2.75 4v3c0 1 0 1 1 1z"/></svg>
+          <p>“Learning Today. Building Tomorrow.”</p>
         </div>
-    </section>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <!-- ========================================
-         GITHUB SECTION
-         ======================================== -->
-    <section class="github-section section-padding" id="github">
-        <div class="container">
-            <div class="github-card fade-in">
-                <div class="github-icon-wrapper">
-                    <i class="fab fa-github"></i>
-                </div>
-                <h2>Explore My Projects</h2>
-                <p>I am continuously building and improving my projects while developing my technical skills.</p>
-                <!-- ============================
-                     REPLACE GITHUB LINK
-                     Replace "#" with your GitHub
-                     profile URL, for example:
-                     https://github.com/yourusername
-                     ============================ -->
-                <a href="https://github.com/paulzeeshan351-cyber" class="github-btn" target="_blank" rel="noopener noreferrer">
-                    <i class="fab fa-github"></i> Visit My GitHub
-                </a>
-            </div>
+<!-- ═══════════ EDUCATION ═══════════ -->
+<section id="education" class="pad band">
+  <div class="wrap">
+    <div class="sec-head" data-reveal>
+      <span class="eyebrow">Education</span>
+      <h2>Education &amp; <span class="grad">Learning Journey</span></h2>
+      <p>From writing my first line of code in Class 8 to mastering GIT + AI — every step has been deliberate.</p>
+    </div>
+
+    <div class="timeline">
+      <div class="t-item" data-reveal>
+        <span class="t-node"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m16 18 6-6-6-6M8 6l-6 6 6 6"/></svg></span>
+        <div class="t-card card">
+          <div class="t-top"><b>Class 8 — Coding Journey Started</b><span class="t-status t-done">Completed</span></div>
+          <p class="t-org"><a href="https://www.dcodefuture.com/">Dcode Future, Pampore</a></p>
+          <p class="d">Started learning computers and coding — the journey began here.</p>
         </div>
-    </section>
-
-    <!-- ========================================
-         ILS PLASMA SECTION
-         ======================================== -->
-    <section class="ils-section section-padding" id="ils-plasma">
-        <div class="container">
-            <div class="ils-container fade-in">
-                <div class="ils-badge">
-                    <i class="fas fa-award"></i>
-                    Professional Training
-                </div>
-                <h2>Developing Skills at<br><span>ILS PLASMA, Srinagar</span></h2>
-                <p>
-                    Currently developing my technical skills through GIT + AI training at 
-                    ILS PLASMA, Srinagar — one of the most trusted IT training institutes in the region.
-                </p>
-                <div class="ils-stats">
-                    <div class="ils-stat">
-                        <div class="stat-number">27+</div>
-                        <div class="stat-label">Years of Excellence</div>
-                    </div>
-                    <div class="ils-stat">
-                        <div class="stat-number">1998</div>
-                        <div class="stat-label">Established Since</div>
-                    </div>
-                    <div class="ils-stat">
-                        <div class="stat-number">GIT+AI</div>
-                        <div class="stat-label">Current Course</div>
-                    </div>
-                </div>
-                <div class="ils-trust-card">
-                    <p>"Training with an institute trusted for <strong>27+ years of IT excellence</strong> since 1998."</p>
-                </div>
-            </div>
+      </div>
+      <div class="t-item" data-reveal style="--d:.06s">
+        <span class="t-node"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m4 6 8-4 8 4"/><path d="M18 10v10H6V10"/><path d="M2 20h20"/><path d="M10 20v-4a2 2 0 1 1 4 0v4"/></svg></span>
+        <div class="t-card card">
+          <div class="t-top"><b>Class 10</b><span class="t-status t-done">Completed</span></div>
+          <p class="t-org">Government High School, Khadermoh</p>
+          <p class="d">Successfully completed Class 10 with a growing interest in technology.</p>
         </div>
-    </section>
-
-    <!-- ========================================
-         CONTACT SECTION
-         ======================================== -->
-    <section class="contact section-padding" id="contact">
-        <div class="container">
-            <div class="section-header fade-in">
-                <span class="section-label">Contact</span>
-                <h2 class="section-title">Get in Touch</h2>
-                <p class="section-subtitle">Have a question or want to connect? Feel free to reach out.</p>
-            </div>
-
-            <div class="contact-grid">
-                <!-- Contact Info -->
-                <div class="contact-info fade-in-left">
-                    <h3>Let's Connect</h3>
-                    <p>
-                        I'm always open to discussing new opportunities, ideas or simply having a 
-                        conversation about technology. Drop me a message!
-                    </p>
-
-                    <div class="contact-detail">
-                        <div class="contact-detail-icon">
-                            <i class="fas fa-envelope"></i>
-                        </div>
-                        <div class="contact-detail-text">
-                            <div class="label">Email</div>
-                            <div class="value">
-                                <a href="mailto:paulzeeshan351@gmail.com" style="color: var(--text-dark);">
-                                    paulzeeshan351@gmail.com
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="contact-detail">
-                        <div class="contact-detail-icon">
-                            <i class="fas fa-map-marker-alt"></i>
-                        </div>
-                        <div class="contact-detail-text">
-                            <div class="label">Location</div>
-                            <div class="value">Raithan, Budgam</div>
-                        </div>
-                    </div>
-
-                    <div class="contact-detail">
-                        <div class="contact-detail-icon">
-                            <i class="fas fa-graduation-cap"></i>
-                        </div>
-                        <div class="contact-detail-text">
-                            <div class="label">Currently At</div>
-                            <div class="value">Amar Singh College & ILS PLASMA</div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Contact Form -->
-                <div class="contact-form-card fade-in-right">
-                    <form id="contactForm" novalidate>
-                        <div class="form-group" id="nameGroup">
-                            <label for="name">Your Name</label>
-                            <input type="text" id="name" placeholder="Enter your name" required>
-                            <div class="error-message">Please enter your name.</div>
-                        </div>
-                        <div class="form-group" id="emailGroup">
-                            <label for="email">Your Email</label>
-                            <input type="email" id="email" placeholder="Enter your email" required>
-                            <div class="error-message">Please enter a valid email address.</div>
-                        </div>
-                        <div class="form-group" id="messageGroup">
-                            <label for="message">Your Message</label>
-                            <textarea id="message" placeholder="Write your message here..." required></textarea>
-                            <div class="error-message">Please enter your message.</div>
-                        </div>
-                        <button type="submit" class="form-submit">
-                            <i class="fas fa-paper-plane"></i> Send Message
-                        </button>
-                        <div class="form-success" id="formSuccess">
-                            <i class="fas fa-check-circle"></i> Thank you! Your message has been sent successfully.
-                        </div>
-                    </form>
-                </div>
-            </div>
+      </div>
+      <div class="t-item" data-reveal style="--d:.06s">
+        <span class="t-node"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10 12 5 2 10l10 5 10-5Z"/><path d="M6 12.5V17c0 1.7 2.7 3 6 3s6-1.3 6-3v-4.5"/><path d="M22 10v6"/></svg></span>
+        <div class="t-card card">
+          <div class="t-top"><b>Class 12</b><span class="t-status t-done">Completed</span></div>
+          <p class="t-org"><a href="https://www.facebook.com/p/Govt-Boys-Higher-Secondary-School-Samboora-Pulwama-61558846340443/">Government Higher Secondary samboora School</a></p>
+          <p class="d">Successfully completed Class 12 while continuing to develop technical skills.</p>
         </div>
-    </section>
-
-    <!-- ========================================
-         FOOTER
-         ======================================== -->
-    <footer>
-        <div class="footer-content">
-            <nav class="footer-links" aria-label="Footer Navigation">
-                <a href="#hero">Home</a>
-                <a href="#about">About</a>
-                <a href="#skills">Skills</a>
-                <a href="#projects">Projects</a>
-                <a href="#contact">Contact</a>
-            </nav>
-            <div class="footer-divider"></div>
-            <p class="footer-copyright">&copy; 2026 Paul Zeeshan. All Rights Reserved.</p>
+      </div>
+      <div class="t-item now" data-reveal style="--d:.06s">
+        <span class="t-node"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2Z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7Z"/></svg></span>
+        <div class="t-card card">
+          <div class="t-top"><b>BA</b><span class="t-status t-now">Pursuing</span></div>
+          <p class="t-org"><a href="https://spcollege.edu.in/Main/Default.aspx">SP College</a></p>
+          <p class="d">Currently pursuing a Bachelor of Arts (BA) alongside professional tech training.</p>
         </div>
-    </footer>
+      </div>
+      <div class="t-item now" data-reveal style="--d:.06s">
+        <span class="t-node"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3-1.9 5.8a2 2 0 0 1-1.3 1.3L3 12l5.8 1.9a2 2 0 0 1 1.3 1.3L12 21l1.9-5.8a2 2 0 0 1 1.3-1.3L21 12l-5.8-1.9a2 2 0 0 1-1.3-1.3Z"/></svg></span>
+        <div class="t-card card">
+          <div class="t-top"><b>GIT + AI</b><span class="t-status t-now">Pursuing</span></div>
+          <p class="t-org"> <a href="https://www.ilssrinagar.com/">ILS Srinagar</a></p>
+          <p class="d">Currently mastering GIT, AI and modern development workflows.</p>
+          <span class="t-badge">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="M15.5 13 17 22l-5-3-5 3 1.5-9"/></svg>
+            27+ Years of Excellence — Since 1998
+          </span>
+        </div>
+      </div>
+    </div>
 
-    <!-- ========================================
-         SCROLL TO TOP BUTTON
-         ======================================== -->
-    <button class="scroll-top" id="scrollTop" aria-label="Scroll to Top">
-        <i class="fas fa-arrow-up"></i>
-    </button>
+    <div class="ils-strip card" data-reveal>
+      <p><b>ILS Srinagar</b> — an IT Management Skills Courses company trusted for <span class="hl">27+ years of excellence since 1998</span>.</p>
+    </div>
+  </div>
+</section>
 
+<!-- ═══════════ SKILLS ═══════════ -->
+<section id="skills" class="pad">
+  <div class="wrap">
+    <div class="sec-head" data-reveal>
+      <span class="eyebrow">Skills</span>
+      <h2>Tools I work with, <span class="grad">honestly rated</span></h2>
+      <p>No inflated percentages — just a truthful snapshot of where I stand and where I'm headed.</p>
+    </div>
+    <div class="skills-grid">
+      <div class="skill card" data-reveal style="--d:.02s;--w:88%">
+        <div class="sk-top"><span class="sk-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="6" x2="6" y1="3" y2="15"/><circle cx="18" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M18 9a9 9 0 0 1-9 9"/></svg></span><span class="lvl lvl-exp">Practical Experience</span></div>
+        <h3>GIT &amp; GitHub</h3><div class="bar"><span></span></div><p class="bar-note">Growing steadily</p>
+      </div>
+      <div class="skill card" data-reveal style="--d:.06s;--w:74%">
+        <div class="sk-top"><span class="sk-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><path d="M9 2v2M15 2v2M9 20v2M15 20v2M2 9h2M2 15h2M20 9h2M20 15h2"/></svg></span><span class="lvl lvl-int">Intermediate</span></div>
+        <h3>AI &amp; Prompt Engineering</h3><div class="bar"><span></span></div><p class="bar-note">Growing steadily</p>
+      </div>
+      <div class="skill card" data-reveal style="--d:.1s;--w:74%">
+        <div class="sk-top"><span class="sk-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m4 17 6-6-6-6M12 19h8"/></svg></span><span class="lvl lvl-int">Intermediate</span></div>
+        <h3>Python</h3><div class="bar"><span></span></div><p class="bar-note">Growing steadily</p>
+      </div>
+      <div class="skill card" data-reveal style="--d:.14s;--w:74%">
+        <div class="sk-top"><span class="sk-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg></span><span class="lvl lvl-int">Intermediate</span></div>
+        <h3>Web Development</h3><div class="bar"><span></span></div><p class="bar-note">Growing steadily</p>
+      </div>
+      <div class="skill card" data-reveal style="--d:.02s;--w:88%">
+        <div class="sk-top"><span class="sk-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h20"/><path d="M21 3v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V3"/><path d="m10 16-2 6M14 16l2 6"/></svg></span><span class="lvl lvl-exp">Practical Experience</span></div>
+        <h3>PowerPoint</h3><div class="bar"><span></span></div><p class="bar-note">Growing steadily</p>
+      </div>
+      <div class="skill card" data-reveal style="--d:.06s;--w:60%">
+        <div class="sk-top"><span class="sk-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M18 17V9M13 17V5M8 17v-3"/></svg></span><span class="lvl lvl-dev">Developing</span></div>
+        <h3>Data Analysis</h3><div class="bar"><span></span></div><p class="bar-note">Growing steadily</p>
+      </div>
+      <div class="skill card" data-reveal style="--d:.1s;--w:74%">
+        <div class="sk-top"><span class="sk-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="13.5" cy="6.5" r=".5"/><circle cx="17.5" cy="10.5" r=".5"/><circle cx="8.5" cy="7.5" r=".5"/><circle cx="6.5" cy="12.5" r=".5"/><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.554C21.965 6.012 17.461 2 12 2Z"/></svg></span><span class="lvl lvl-int">Intermediate</span></div>
+        <h3>Graphic Designing</h3><div class="bar"><span></span></div><p class="bar-note">Growing steadily</p>
+      </div>
+      <div class="skill card" data-reveal style="--d:.14s;--w:88%">
+        <div class="sk-top"><span class="sk-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="M8 13h2M14 13h2M8 17h2M14 17h2"/></svg></span><span class="lvl lvl-exp">Practical Experience</span></div>
+        <h3>Microsoft Excel</h3><div class="bar"><span></span></div><p class="bar-note">Growing steadily</p>
+      </div>
+      <div class="skill card" data-reveal style="--d:.02s;--w:88%">
+        <div class="sk-top"><span class="sk-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="M10 9H8M16 13H8M16 17H8"/></svg></span><span class="lvl lvl-exp">Practical Experience</span></div>
+        <h3>Microsoft Word</h3><div class="bar"><span></span></div><p class="bar-note">Growing steadily</p>
+      </div>
+      <div class="skill card" data-reveal style="--d:.06s;--w:42%">
+        <div class="sk-top"><span class="sk-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 8h1a4 4 0 1 1 0 8h-1"/><path d="M3 8h14v9a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4Z"/><path d="M6 2v2M10 2v2M14 2v2"/></svg></span><span class="lvl lvl-learn">Learning</span></div>
+        <h3>Java</h3><div class="bar"><span></span></div><p class="bar-note">Growing steadily</p>
+      </div>
+      <div class="skill card" data-reveal style="--d:.1s;--w:60%">
+        <div class="sk-top"><span class="sk-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9L9.6 3.9A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z"/></svg></span><span class="lvl lvl-dev">Developing</span></div>
+        <h3>Project Development</h3><div class="bar"><span></span></div><p class="bar-note">Growing steadily</p>
+      </div>
+      <div class="skill skill-next card" data-reveal style="--d:.14s">
+        <b>Always adding<br /><span class="grad">the next skill…</span></b>
+        <p>Currently deep into GIT workflows, AI tooling and Python.</p>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <!-- ========================================
-         JAVASCRIPT
-         All interactivity, animations and form
-         validation in one place.
-         ======================================== -->
-    <script>
-        // Wait for the DOM to fully load
-        document.addEventListener('DOMContentLoaded', function () {
-
-            // ============================
-            // MOBILE NAVIGATION TOGGLE
-            // ============================
-            const menuToggle = document.getElementById('menuToggle');
-            const navLinks = document.getElementById('navLinks');
-            const navOverlay = document.getElementById('navOverlay');
-
-            // Open/close mobile menu
-            menuToggle.addEventListener('click', function () {
-                menuToggle.classList.toggle('active');
-                navLinks.classList.toggle('open');
-                navOverlay.classList.toggle('open');
-                document.body.style.overflow = navLinks.classList.contains('open') ? 'hidden' : '';
-            });
-
-            // Close menu when overlay is clicked
-            navOverlay.addEventListener('click', function () {
-                menuToggle.classList.remove('active');
-                navLinks.classList.remove('open');
-                navOverlay.classList.remove('open');
-                document.body.style.overflow = '';
-            });
-
-            // Close menu when a nav link is clicked
-            navLinks.querySelectorAll('a').forEach(function (link) {
-                link.addEventListener('click', function () {
-                    menuToggle.classList.remove('active');
-                    navLinks.classList.remove('open');
-                    navOverlay.classList.remove('open');
-                    document.body.style.overflow = '';
-                });
-            });
-
-
-            // ============================
-            // NAVBAR SCROLL EFFECT
-            // ============================
-            const navbar = document.getElementById('navbar');
-
-            function handleNavbarScroll() {
-                if (window.scrollY > 50) {
-                    navbar.classList.add('scrolled');
-                } else {
-                    navbar.classList.remove('scrolled');
-                }
-            }
-
-            window.addEventListener('scroll', handleNavbarScroll);
-            handleNavbarScroll(); // Run on load
-
-
-            // ============================
-            // ACTIVE NAV LINK ON SCROLL
-            // ============================
-            const sections = document.querySelectorAll('section[id]');
-            const navLinkElements = navLinks.querySelectorAll('a');
-
-            function highlightNavOnScroll() {
-                const scrollPosition = window.scrollY + 150;
-
-                sections.forEach(function (section) {
-                    const sectionTop = section.offsetTop;
-                    const sectionHeight = section.offsetHeight;
-                    const sectionId = section.getAttribute('id');
-
-                    if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
-                        navLinkElements.forEach(function (link) {
-                            link.classList.remove('active');
-                            if (link.getAttribute('href') === '#' + sectionId) {
-                                link.classList.add('active');
-                            }
-                        });
-                    }
-                });
-            }
-
-            window.addEventListener('scroll', highlightNavOnScroll);
-
-
-            // ============================
-            // SCROLL TO TOP BUTTON
-            // ============================
-            const scrollTopBtn = document.getElementById('scrollTop');
-
-            function handleScrollTopVisibility() {
-                if (window.scrollY > 500) {
-                    scrollTopBtn.classList.add('visible');
-                } else {
-                    scrollTopBtn.classList.remove('visible');
-                }
-            }
-
-            window.addEventListener('scroll', handleScrollTopVisibility);
-
-            scrollTopBtn.addEventListener('click', function () {
-                window.scrollTo({ top: 0, behavior: 'smooth' });
-            });
-
-
-            // ============================
-            // FADE-IN ON SCROLL ANIMATION
-            // Uses IntersectionObserver for
-            // performance and smoothness.
-            // ============================
-            const fadeElements = document.querySelectorAll('.fade-in, .fade-in-left, .fade-in-right');
-
-            const observerOptions = {
-                root: null,
-                rootMargin: '0px 0px -60px 0px',
-                threshold: 0.15
-            };
-
-            const observer = new IntersectionObserver(function (entries) {
-                entries.forEach(function (entry, index) {
-                    if (entry.isIntersecting) {
-                        // Add a slight stagger delay based on sibling index
-                        const siblings = entry.target.parentElement.querySelectorAll('.fade-in, .fade-in-left, .fade-in-right');
-                        let staggerIndex = 0;
-                        siblings.forEach(function (sib, i) {
-                            if (sib === entry.target) staggerIndex = i;
-                        });
-
-                        setTimeout(function () {
-                            entry.target.classList.add('visible');
-                        }, staggerIndex * 100);
-
-                        observer.unobserve(entry.target);
-                    }
-                });
-            }, observerOptions);
-
-            fadeElements.forEach(function (el) {
-                observer.observe(el);
-            });
+<!-- ═══════════ PROJECTS ═══════════ -->
+<section id="projects" class="pad band">
+  <div class="wrap">
+    <div class="sec-head" data-reveal>
+      <span class="eyebrow">Projects</span>
+      <h2>Things I've been <span class="grad">building &amp; exploring</span></h2>
+      <p>A growing collection of real projects — each one a step forward in design, code and problem-solving.</p>
+    </div>
+    <div class="proj-grid">
+      <article class="proj card" data-reveal style="--d:.02s">
+        <div class="p-img">
+          <img src="./img2.jpg" alt="Personal Portfolio — project preview" loading="lazy" />
+          <span class="p-num">01</span><span class="p-tag">Portfolio</span>
+        </div>
+        <div class="p-body">
+          <h3>Personal Portfolio</h3>
+          <p class="p-desc">Modern responsive developer portfolio with glass UI, smooth animations and a clean premium aesthetic.</p>
+          <div class="p-tech"><span class="chip">React</span><span class="chip">Tailwind CSS</span><span class="chip">Framer Motion</span></div>
+          <div class="p-actions">
+            <a class="p-btn p-live" href="https://shahidbilal.vercel.app/" target="_blank" rel="noopener noreferrer" aria-label="Open live demo of Personal Portfolio">Live Demo<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></a>
+            <a class="p-btn p-gh" href="https://github.com/shahid-bilal1" target="_blank" rel="noopener noreferrer" aria-label="View Personal Portfolio on GitHub"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>GitHub</a>
+          </div>
+        </div>
+      </article>
+      
+  
+      <article class="proj card" data-reveal style="--d:.02s">
+        <div class="p-img">
+          <img src="./project-vlcc.jpg" alt="VLCC Website — project preview" loading="lazy" />
+          <span class="p-num">02</span><span class="p-tag">Beauty &amp; Wellness</span>
+        </div>
+        <div class="p-body">
+          <h3>VLCC Website</h3>
+          <p class="p-desc">Beauty and wellness website concept with professional service presentation and a refined booking feel.</p>
+          <div class="p-tech"><span class="chip">React</span><span class="chip">Tailwind CSS</span><span class="chip">UI Design</span></div>
+          <div class="p-actions">
+            <a class="p-btn p-live" href="https://vlccpamporee.netlify.app/" target="_blank" rel="noopener noreferrer" aria-label="Open live demo of VLCC Website">Live Demo<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></a>
+            <a class="p-btn p-gh" href="https://github.com/shahid-bilal1" target="_blank" rel="noopener noreferrer" aria-label="View VLCC Website on GitHub"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>GitHub</a>
+          </div>
+        </div>
+      </article>
+      <article class="proj card" data-reveal style="--d:.08s">
+        <div class="p-img">
+          <img src="./project-data.jpg" alt="Data Analysis Project — preview" loading="lazy" />
+          <span class="p-num">03</span><span class="p-tag">Python</span>
+        </div>
+        <div class="p-body">
+          <h3>Data Analysis Project</h3>
+          <p class="p-desc">Python-based data analysis — cleaning datasets, exploring patterns and visualising insights with charts.</p>
+          <div class="p-tech"><span class="chip">Python</span><span class="chip">Pandas</span><span class="chip">Matplotlib</span></div>
+          <div class="p-actions">
+            <a class="p-btn p-live" href="https://github.com/shahid-bilal1/python-matplotlib-" target="_blank" rel="noopener noreferrer" aria-label="Open live demo of Data Analysis Project">Live Demo<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></a>
+            <a class="p-btn p-gh" href="https://github.com/shahid-bilal1" target="_blank" rel="noopener noreferrer" aria-label="View Data Analysis Project on GitHub"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>GitHub</a>
+          </div>
+        </div>
+      </article>
+     
+   
+    </div>
+    <div class="gh-more" data-reveal>
+      <a class="btn btn-ghost" href="https://github.com/shahid-bilal1" target="_blank" rel="noopener noreferrer">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+        See more on GitHub
+      </a>
+    </div>
+  </div>
+</section>
 
 
-            // ============================
-            // CONTACT FORM VALIDATION
-            // Validates name, email and message.
-            // Shows success message on valid submit.
-            // Does NOT actually send email.
-            // ============================
-            const contactForm = document.getElementById('contactForm');
-            const nameGroup = document.getElementById('nameGroup');
-            const emailGroup = document.getElementById('emailGroup');
-            const messageGroup = document.getElementById('messageGroup');
-            const nameInput = document.getElementById('name');
-            const emailInput = document.getElementById('email');
-            const messageInput = document.getElementById('message');
-            const formSuccess = document.getElementById('formSuccess');
 
-            // Simple email regex
-            function isValidEmail(email) {
-                return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
-            }
+<!-- ═══════════ WHAT I DO ═══════════ -->
+<section id="services" class="pad band">
+  <div class="wrap">
+    <div class="sec-head" data-reveal>
+      <span class="eyebrow">What I Do</span>
+      <h2>Ways I can <span class="grad">create value</span></h2>
+      <p>A blend of code, data, AI and design — applied with care to every project.</p>
+    </div>
+    <div class="svc-grid">
+      <div class="svc card" data-reveal style="--d:.02s">
+        <span class="sv-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg></span>
+        <h3>Web Development</h3>
+        <p>Building modern, responsive websites with clean code, sharp layouts and smooth interactions.</p>
+        <svg class="sv-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+      </div>
+      <div class="svc card" data-reveal style="--d:.07s">
+        <span class="sv-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M18 17V9M13 17V5M8 17v-3"/></svg></span>
+        <h3>Python &amp; Data Analysis</h3>
+        <p>Working with Python and data analysis concepts — cleaning, exploring and visualising data.</p>
+        <svg class="sv-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+      </div>
+      <div class="svc card" data-reveal style="--d:.12s">
+        <span class="sv-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><path d="M9 2v2M15 2v2M9 20v2M15 20v2M2 9h2M2 15h2M20 9h2M20 15h2"/></svg></span>
+        <h3>AI &amp; Prompt Engineering</h3>
+        <p>Learning and applying AI tools with effective, structured prompting for real-world tasks.</p>
+        <svg class="sv-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+      </div>
+      <div class="svc card" data-reveal style="--d:.02s">
+        <span class="sv-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="13.5" cy="6.5" r=".5"/><circle cx="17.5" cy="10.5" r=".5"/><circle cx="8.5" cy="7.5" r=".5"/><circle cx="6.5" cy="12.5" r=".5"/><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.554C21.965 6.012 17.461 2 12 2Z"/></svg></span>
+        <h3>Graphic Designing</h3>
+        <p>Creating modern visual designs, social graphics and brand-ready creative assets.</p>
+        <svg class="sv-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+      </div>
+      <div class="svc card" data-reveal style="--d:.07s">
+        <span class="sv-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h20"/><path d="M21 3v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V3"/><path d="m10 16-2 6M14 16l2 6"/></svg></span>
+        <h3>Presentation Design</h3>
+        <p>Designing professional PowerPoint presentations that communicate clearly and look premium.</p>
+        <svg class="sv-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+      </div>
+      <div class="svc card" data-reveal style="--d:.12s">
+        <span class="sv-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="M8 13h2M14 13h2M8 17h2M14 17h2"/></svg></span>
+        <h3>Office &amp; Productivity</h3>
+        <p>Confident everyday work with Microsoft Word and Excel — documents, data and reports.</p>
+        <svg class="sv-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+      </div>
+    </div>
+  </div>
+</section>
 
-            // Clear errors on input
-            nameInput.addEventListener('input', function () {
-                nameGroup.classList.remove('error');
-            });
-            emailInput.addEventListener('input', function () {
-                emailGroup.classList.remove('error');
-            });
-            messageInput.addEventListener('input', function () {
-                messageGroup.classList.remove('error');
-            });
+<!-- ═══════════ CONTACT ═══════════ -->
+<section id="contact" class="pad">
+  <div class="wrap">
+    <div class="sec-head" data-reveal>
+      <span class="eyebrow">Contact</span>
+      <h2>Let's <span class="grad">Connect</span></h2>
+      <p>Have an opportunity, a collaboration idea or just want to say hello? My inbox is always open.</p>
+    </div>
 
-            contactForm.addEventListener('submit', function (e) {
-                e.preventDefault();
+    <div class="contact-grid">
+      <div class="c-info">
+        <a class="c-card card" href="mailto:shahidbilal5086@gmail.com" data-reveal>
+          <span class="c-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg></span>
+          <div><span class="lbl">Email me at</span><b>shahidbilal5086@gmail.com</b></div>
+        </a>
+        <div class="c-card card" data-reveal style="--d:.08s">
+          <span class="c-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg></span>
+          <div><span class="lbl">Based in</span><b>Kandizal, Pampore, Jammu &amp; Kashmir</b></div>
+        </div>
+        <div class="c-card card" data-reveal style="--d:.14s">
+          <div style="width:100%">
+            <span class="lbl">Find me on</span>
+            <div style="display:flex;gap:10px;margin-top:4px">
+              <a class="icon-btn" href="https://www.instagram.com/the_shahid._/" target="_blank" rel="noopener noreferrer" aria-label="Instagram — @the_shahid._" title="Instagram · @the_shahid._"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg></a>
+              <a class="icon-btn" href="https://www.linkedin.com/in/shahid-ahmad-322227373" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn — Shahid Ahmad" title="LinkedIn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg></a>
+              <a class="icon-btn" href="https://github.com/shahid-bilal1" target="_blank" rel="noopener noreferrer" aria-label="GitHub — shahid-bilal1" title="GitHub · shahid-bilal1"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg></a>
+            </div>
+            <p class="c-note" style="margin-top:12px;display:flex;align-items:center;gap:6px">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:13px;height:13px"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+              Typical response time: within 24 hours.
+            </p>
+          </div>
+        </div>
+        <div class="c-card card motto" data-reveal style="--d:.2s">
+          <p>“Learning Today. Building Tomorrow.”</p>
+          <span>— my personal motto</span>
+        </div>
+      </div>
 
-                let isValid = true;
+      <form id="contactForm" class="form-card card" data-reveal style="--d:.1s" novalidate aria-label="Contact form">
+        <div class="f-row">
+          <div class="field" id="fName">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" placeholder="Your name" autocomplete="name" />
+            <span class="err">Please enter your name (2+ characters).</span>
+          </div>
+          <div class="field" id="fEmail">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" placeholder="you@example.com" autocomplete="email" />
+            <span class="err">Please enter a valid email address.</span>
+          </div>
+        </div>
+        <div class="field" id="fMsg">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="6" placeholder="Tell me about your idea, project or opportunity…"></textarea>
+          <span class="err">Please write a message (10+ characters).</span>
+        </div>
+        <div class="form-foot">
+          <button type="submit" class="btn btn-primary" id="sendBtn">
+            <span id="sendTxt">Send Message</span>
+            <svg id="sendIc" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 3 3 9-3 9 19-9Z"/><path d="M6 12h16"/></svg>
+          </button>
+          <small>Delivered directly to <b>shahidbilal5086@gmail.com</b></small>
+        </div>
+        <button type="button" class="mail-alt" id="mailAlt">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+          Or open this message in your email app
+        </button>
+        <div class="msg msg-ok" id="msgOk" role="status">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>
+          <div><b>Thank you! Your message has been sent successfully.</b><span>I'll get back to you as soon as possible.</span></div>
+        </div>
+        <div class="msg msg-err" id="msgErr" role="alert">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 8v4M12 16h.01"/></svg>
+          <div><b>Something went wrong — the message didn't send.</b><span>No worries — <a href="#" id="errMail">tap here to send it via your email app</a> instead.</span></div>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
 
-                // Validate name
-                if (nameInput.value.trim() === '') {
-                    nameGroup.classList.add('error');
-                    isValid = false;
-                } else {
-                    nameGroup.classList.remove('error');
-                }
+<!-- ═══════════ FOOTER ═══════════ -->
+<footer>
+  <div class="wrap">
+    <div class="foot-top">
+      <div class="foot-brand">
+        <a href="#home" class="brand">
+          <span class="brand-mark">SB</span>
+          <span class="brand-t"><b>SHAHID BILAL</b><span>GIT + AI Learner | Developer</span></span>
+        </a>
+        <p>“Learning Today. Building Tomorrow.”</p>
+      </div>
+      <nav class="foot-nav" aria-label="Footer">
+        <a href="#home">Home</a><a href="#about">About</a><a href="#education">Education</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#gallery">Gallery</a><a href="#contact">Contact</a>
+      </nav>
+      <div class="foot-social">
+        <a class="icon-btn" href="https://www.instagram.com/the_shahid._/" target="_blank" rel="noopener noreferrer" aria-label="Instagram — @the_shahid._" title="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg></a>
+        <a class="icon-btn" href="https://www.linkedin.com/in/shahid-ahmad-322227373" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn — Shahid Ahmad" title="LinkedIn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg></a>
+        <a class="icon-btn" href="https://github.com/shahid-bilal1" target="_blank" rel="noopener noreferrer" aria-label="GitHub — shahid-bilal1" title="GitHub"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg></a>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <div class="foot-meta">
+        <a href="mailto:shahidbilal5086@gmail.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>shahidbilal5086@gmail.com</a>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>Kandizal, Pampore, Jammu &amp; Kashmir</span>
+      </div>
+      <p>© 2026 Shahid Bilal. All Rights Reserved.</p>
+    </div>
+  </div>
+</footer>
 
-                // Validate email
-                if (!isValidEmail(emailInput.value.trim())) {
-                    emailGroup.classList.add('error');
-                    isValid = false;
-                } else {
-                    emailGroup.classList.remove('error');
-                }
+<!-- lightbox -->
+<div id="lightbox" role="dialog" aria-modal="true" aria-label="Photo lightbox">
+  <img id="lbImg" src="" alt="" />
+  <div id="lbCap"><b></b><span></span></div>
+  <button id="lbClose" aria-label="Close lightbox"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 6 6 18M6 6l12 12"/></svg></button>
+</div>
 
-                // Validate message
-                if (messageInput.value.trim() === '') {
-                    messageGroup.classList.add('error');
-                    isValid = false;
-                } else {
-                    messageGroup.classList.remove('error');
-                }
+<!-- back to top -->
+<button id="toTop" aria-label="Back to top"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 7-7 7 7"/><path d="M12 19V5"/></svg></button>
 
-                // If all fields are valid, show success message
-                if (isValid) {
-                    formSuccess.classList.add('show');
-                    contactForm.reset();
+<script>
+(function(){
+  "use strict";
 
-                    // Hide success message after 5 seconds
-                    setTimeout(function () {
-                        formSuccess.classList.remove('show');
-                    }, 5000);
-                }
-            });
+  /* ─────────── Navbar: scrolled state + progress bar + to-top ─────────── */
+  var header = document.getElementById('header'),
+      progress = document.getElementById('progress'),
+      toTop = document.getElementById('toTop');
 
-        }); // End DOMContentLoaded
-    </script>
+  function onScroll(){
+    var y = window.scrollY || window.pageYOffset;
+    header.classList.toggle('scrolled', y > 24);
+    toTop.classList.toggle('show', y > 600);
+    var h = document.documentElement.scrollHeight - window.innerHeight;
+    progress.style.width = (h > 0 ? (y / h) * 100 : 0) + '%';
+  }
+  window.addEventListener('scroll', onScroll, { passive:true });
+  onScroll();
+  toTop.addEventListener('click', function(){ window.scrollTo({ top:0, behavior:'smooth' }); });
 
+  /* ─────────── Mobile menu ─────────── */
+  var menuBtn = document.getElementById('menuBtn'),
+      icMenu = document.getElementById('icMenu'),
+      icClose = document.getElementById('icClose');
+
+  function closeMenu(){
+    header.classList.remove('open');
+    icMenu.style.display = ''; icClose.style.display = 'none';
+    menuBtn.setAttribute('aria-expanded','false');
+    document.body.style.overflow = '';
+  }
+  menuBtn.addEventListener('click', function(){
+    var open = header.classList.toggle('open');
+    icMenu.style.display = open ? 'none' : '';
+    icClose.style.display = open ? '' : 'none';
+    menuBtn.setAttribute('aria-expanded', String(open));
+    document.body.style.overflow = open ? 'hidden' : '';
+  });
+  document.querySelectorAll('.mobile-menu a').forEach(function(a){
+    a.addEventListener('click', closeMenu);
+  });
+
+  /* ─────────── Scroll spy ─────────── */
+  var spyLinks = document.querySelectorAll('[data-spy]');
+  var spyObs = new IntersectionObserver(function(entries){
+    entries.forEach(function(en){
+      if(en.isIntersecting){
+        var id = en.target.id;
+        spyLinks.forEach(function(l){ l.classList.toggle('active', l.getAttribute('data-spy') === id); });
+      }
+    });
+  }, { rootMargin:'-40% 0px -55% 0px' });
+  document.querySelectorAll('main section[id]').forEach(function(s){ spyObs.observe(s); });
+
+  /* ─────────── Reveal on scroll ─────────── */
+  var revealObs = new IntersectionObserver(function(entries){
+    entries.forEach(function(en){
+      if(en.isIntersecting){ en.target.classList.add('in'); revealObs.unobserve(en.target); }
+    });
+  }, { threshold:.12, rootMargin:'0px 0px -40px 0px' });
+  document.querySelectorAll('[data-reveal]').forEach(function(el){ revealObs.observe(el); });
+
+  /* ─────────── Gallery lightbox ─────────── */
+  var lb = document.getElementById('lightbox'),
+      lbImg = document.getElementById('lbImg'),
+      lbTitle = document.querySelector('#lbCap b'),
+      lbText = document.querySelector('#lbCap span'),
+      lbClose = document.getElementById('lbClose');
+
+  function openLB(src, title, caption){
+    lbImg.src = src; lbImg.alt = title;
+    lbTitle.textContent = title; lbText.textContent = caption;
+    lb.classList.add('open'); document.body.style.overflow = 'hidden';
+  }
+  function closeLB(){
+    lb.classList.remove('open');
+    if(!header.classList.contains('open')) document.body.style.overflow = '';
+  }
+  document.querySelectorAll('.g-item').forEach(function(item){
+    item.addEventListener('click', function(){
+      openLB(item.getAttribute('data-full'), item.getAttribute('data-title'), item.getAttribute('data-caption'));
+    });
+  });
+  lbClose.addEventListener('click', closeLB);
+  lb.addEventListener('click', function(e){ if(e.target === lb) closeLB(); });
+  document.addEventListener('keydown', function(e){ if(e.key === 'Escape') closeLB(); });
+
+  /* ─────────── Contact form (fixed & robust) ─────────── */
+  var EMAIL_TO = 'shahidbilal5086@gmail.com',
+      form = document.getElementById('contactForm'),
+      sendBtn = document.getElementById('sendBtn'),
+      sendTxt = document.getElementById('sendTxt'),
+      sendIc = document.getElementById('sendIc'),
+      msgOk = document.getElementById('msgOk'),
+      msgErr = document.getElementById('msgErr'),
+      errMail = document.getElementById('errMail'),
+      mailAlt = document.getElementById('mailAlt'),
+      fName = document.getElementById('fName'),
+      fEmail = document.getElementById('fEmail'),
+      fMsg = document.getElementById('fMsg');
+
+  function val(id){ return document.getElementById(id).value.trim(); }
+  function validEmail(e){ return /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(e); }
+
+  function buildMailto(){
+    var n = val('name') || '', e = val('email') || '', m = val('message') || '',
+        t = new Date().toLocaleString('en-IN', { timeZone:'Asia/Kolkata', dateStyle:'medium', timeStyle:'short' }) + ' (IST)';
+    return 'mailto:' + EMAIL_TO +
+      '?subject=' + encodeURIComponent('Portfolio contact from ' + (n || 'Website visitor')) +
+      '&body=' + encodeURIComponent('Name: ' + n + '\nEmail: ' + e + '\nDate/Time: ' + t + '\n\nMessage:\n' + m);
+  }
+  mailAlt.addEventListener('click', function(){ window.location.href = buildMailto(); });
+  errMail.addEventListener('click', function(ev){ ev.preventDefault(); window.location.href = buildMailto(); });
+
+  function setLoading(on){
+    sendBtn.disabled = on;
+    sendTxt.textContent = on ? 'Sending…' : 'Send Message';
+    sendIc.classList.toggle('spin', on);
+  }
+  function setFieldState(){
+    fName.classList.toggle('invalid', val('name').length < 2);
+    fEmail.classList.toggle('invalid', !validEmail(val('email')));
+    fMsg.classList.toggle('invalid', val('message').length < 10);
+    return val('name').length >= 2 && validEmail(val('email')) && val('message').length >= 10;
+  }
+  ['name','email','message'].forEach(function(id){
+    document.getElementById(id).addEventListener('input', function(){
+      document.getElementById(id === 'name' ? 'fName' : id === 'email' ? 'fEmail' : 'fMsg').classList.remove('invalid');
+    });
+  });
+
+  form.addEventListener('submit', function(ev){
+    ev.preventDefault();
+    msgOk.classList.remove('show'); msgErr.classList.remove('show');
+    if(!setFieldState()) return;
+    if(sendBtn.disabled) return;
+    setLoading(true);
+
+    var fd = new FormData();
+    fd.append('Name', val('name'));
+    fd.append('Sender Email', val('email'));
+    fd.append('Message', val('message'));
+    fd.append('Submitted At', new Date().toLocaleString('en-IN', { timeZone:'Asia/Kolkata', dateStyle:'medium', timeStyle:'short' }) + ' (IST)');
+    fd.append('_subject', 'Portfolio message from ' + val('name'));
+    fd.append('_template', 'table');
+    fd.append('_captcha', 'false');
+    fd.append('_replyto', val('email'));
+
+    var ctrl = new AbortController(),
+        timer = setTimeout(function(){ ctrl.abort(); }, 15000);
+
+    fetch('https://formsubmit.co/ajax/' + EMAIL_TO, {
+      method:'POST',
+      headers:{ 'Accept':'application/json' },
+      body: fd,
+      signal: ctrl.signal
+    })
+    .then(function(res){ return res.json().then(function(d){ return { ok:res.ok, data:d }; }); })
+    .then(function(r){
+      clearTimeout(timer); setLoading(false);
+      if(r.ok && String(r.data && r.data.success) !== 'false'){
+        msgOk.classList.add('show');
+        form.reset();
+        msgOk.scrollIntoView({ behavior:'smooth', block:'nearest' });
+      } else { throw new Error('rejected'); }
+    })
+    .catch(function(){
+      clearTimeout(timer); setLoading(false);
+      msgErr.classList.add('show');
+      msgErr.scrollIntoView({ behavior:'smooth', block:'nearest' });
+    });
+  });
+})();
+</script>
 </body>
 </html>
